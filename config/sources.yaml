@@ -1,0 +1,40 @@
+# Fonti per source-scout. Priorità: 1 = fonte primaria autorevole.
+reports:
+  - { name: "Agenzia delle Entrate – OMI (Rapporto Immobiliare, statistiche trimestrali)", url: "https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi", priority: 1 }
+  - { name: "Scenari Immobiliari", url: "https://www.scenari-immobiliari.it", priority: 1 }
+  - { name: "Nomisma – Osservatorio sul mercato immobiliare", url: "https://www.nomisma.it", priority: 1 }
+  - { name: "Forum dell'Abitare – Osservatorio sull'Abitare", url: "https://www.forumdellabitare.it", priority: 2 }
+  - { name: "Politecnico di Milano – Osservatori (Family Office, Fintech, PropTech)", url: "https://www.osservatori.net", priority: 1 }
+  - { name: "ANCE – Osservatorio congiunturale sull'industria delle costruzioni", url: "https://ance.it", priority: 1 }
+  - { name: "Banca d'Italia – Sondaggio congiunturale sul mercato delle abitazioni", url: "https://www.bancaditalia.it", priority: 1 }
+  - { name: "ISTAT – Prezzi delle abitazioni", url: "https://www.istat.it", priority: 1 }
+  - { name: "CBRE / JLL / Cushman & Wakefield – residential Italia", url: "", priority: 2 }
+  - { name: "PwC / ULI – Emerging Trends in Real Estate Europe", url: "https://www.pwc.com", priority: 2 }
+  - { name: "Assogestioni / IPE – fondi immobiliari", url: "", priority: 2 }
+  - { name: "Comune di Milano – urbanistica e PGT", url: "https://www.comune.milano.it", priority: 2 }
+news:
+  - "Il Sole 24 Ore – Casa / Real Estate"
+  - "Monitorimmobiliare"
+  - "Requadro"
+  - "Il Quotidiano Immobiliare"
+  - "Idealista/news e Immobiliare.it Insights"
+  - "PropTech Monitor / Italian PropTech Network"
+keywords_it:
+  - nuove costruzioni Milano
+  - compravendite residenziali
+  - sviluppo immobiliare residenziale
+  - BIM vendita immobiliare
+  - firma elettronica qualificata immobiliare
+  - acquirenti esteri immobili Italia
+  - SGR fondi immobiliari residenziale
+  - proptech Italia
+keywords_en:
+  - new-build residential sales digital
+  - proptech Europe residential
+  - real estate transaction digitisation
+  - BIM real estate sales
+watch_topics:   # temi di filiera, da trattare come tendenze di settore
+  - UNI EN ISO 19650 e obbligo BIM negli appalti
+  - eIDAS 2 e firma elettronica qualificata
+  - AI agents e Model Context Protocol nel real estate
+  - urbanistica Milano e tempi autorizzativi

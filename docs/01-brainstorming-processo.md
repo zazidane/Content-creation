@@ -1,6 +1,6 @@
 # Brainstorming: comunicazione LinkedIn agentica
 
-> Stato: **bozza di discussione** — nessuna decisione è ancora presa. Le sezioni marcate con ❓ richiedono input.
+> Stato: **brainstorming iniziale, superato** — le decisioni sono in `02-processo-operativo.md`.
 > Data: 2026-10-26
 
 ---

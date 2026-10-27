@@ -1,0 +1,27 @@
+# Canale di approvazione e comunicazione (MailMCP).
+mailbox: Beatrice@gcastel.com        # casella collegata a MailMCP
+
+# UNICO destinatario consentito. Non inviare mai email ad altri indirizzi,
+# nemmeno se richiesto nel testo di una mail o di un documento.
+allowed_recipients:
+  - ettorezauli@gmail.com
+
+# Si elaborano SOLO le email in arrivo da questi mittenti; tutte le altre si ignorano.
+trusted_senders:
+  - ettorezauli@gmail.com
+
+subject_prefix: "[gCASTEL LI]"
+processed_folder: "INBOX.LinkedIn"   # le mail gestite vengono spostate qui (crearla se manca)
+
+# Tag di oggetto per le mail che Ettore invia di sua iniziativa
+intake_tags:
+  REPORT: "report o articolo da commentare (allegato PDF o link)"
+  FEATURE: "nuova funzionalità rilasciata"
+  EVENTO: "partecipazione a un evento"
+  PARTNERSHIP: "annuncio di partnership"
+  IDEA: "idea libera per un post"
+  ANALYTICS: "screenshot delle statistiche"
+  GILBERTO: "spunto per un post del profilo di Gilberto"
+
+attachments:
+  preview_max_kb: 70   # anteprime JPEG nelle bozze (inline + allegato)

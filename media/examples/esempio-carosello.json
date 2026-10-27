@@ -1,0 +1,10 @@
+{
+  "out": "../../.render-test/esempio-carosello",
+  "format": "portrait",
+  "slides": [
+    { "template": "cover", "kicker": "Vendere il nuovo", "title": "Tre attriti nella vendita di una casa in costruzione", "body": "Cosa ci hanno raccontato sviluppatori e SGR negli ultimi mesi." },
+    { "template": "point", "index": "1", "title": "Le varianti richiedono settimane", "body": "Ogni personalizzazione passa da un preventivo manuale dell'ufficio tecnico: in media **2 settimane** per una risposta.", "source": "Interviste gCASTEL a 20 referenti, gen–set 2026" },
+    { "template": "announce", "kicker": "Novità", "title": "Prenota online con il **Priority Ticket**", "body": "Una prelazione temporanea sull'unità, con firma e pagamento in piattaforma.", "pill": "Esempio" },
+    { "template": "quote", "quote": "Chi compra una casa in costruzione decide su un bene che non esiste ancora. Il nostro lavoro è dargli informazioni complete e verificabili.", "author": "Gilberto Castelluzzo", "role": "CEO, gCASTEL" }
+  ]
+}

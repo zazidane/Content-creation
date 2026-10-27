@@ -1,0 +1,11 @@
+# Registro eventi. Lo aggiorna linkedin-inbox quando Ettore manda una mail [EVENTO].
+# Per ogni evento si pianificano: annuncio (7-10 giorni prima), live (foto dal team), recap (entro 2 giorni).
+events: []
+# esempio:
+# - name: "Nome evento"
+#   dates: "2026-11-20/2026-11-21"
+#   city: Milano
+#   role: "stand | talk di Gilberto | partecipazione"
+#   url: https://...
+#   hashtags: ["#evento"]
+#   status: confermato

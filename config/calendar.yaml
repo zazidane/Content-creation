@@ -1,0 +1,37 @@
+# Calendario editoriale e regole di produzione.
+timezone: Europe/Rome
+
+channels:
+  pagina:
+    label: "Pagina gCASTEL"
+    approver: Ettore Zauli
+    posts_per_week: 3
+    slots:            # giorno e ora di pubblicazione consigliati
+      - { day: tue, time: "08:30" }
+      - { day: wed, time: "08:30" }
+      - { day: thu, time: "08:30" }
+  gilberto:
+    label: "Profilo di Gilberto Castelluzzo"
+    approver: Gilberto Castelluzzo   # approva tramite Ettore (vedi docs/protocollo-email.md)
+    posts_per_week: 1                # DA CONFERMARE
+    slots:
+      - { day: wed, time: "12:30" }
+
+languages: [it, en]
+# combined: un solo post con IT sopra e EN sotto
+# separate: la versione EN è un post a parte (raddoppia i post)
+# it_only_en_comment: post in IT, versione EN nel primo commento
+bilingual_mode: combined   # DA CONFERMARE
+
+lead_times:
+  plan_email: "thu 08:40"           # piano della settimana successiva
+  draft_ready_days_before: 1        # la bozza deve essere approvata entro il giorno prima dello slot
+  reminder_if_not_approved: "giro delle 17 del giorno prima"
+
+# mix mensile della pagina (12 post): vedi brand/playbook.md
+pillar_mix:
+  mercato: 4
+  piattaforma: 3
+  filiera: 2
+  vita: 2
+  annunci: 1

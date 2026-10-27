@@ -1,0 +1,14 @@
+{
+  "out": "../../.render-test/esempio-dato",
+  "format": "portrait",
+  "slides": [
+    {
+      "template": "data",
+      "kicker": "Mercato residenziale · Milano 2025",
+      "value": "25.173",
+      "label": "compravendite residenziali, **+4,9%** sul 2024",
+      "body": "Valore medio per unità: circa 440.000 €, il più alto in Italia.",
+      "source": "Agenzia delle Entrate – OMI, Rapporto Immobiliare 2026"
+    }
+  ]
+}
