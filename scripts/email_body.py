@@ -45,6 +45,13 @@ def block(title, inner, bg="#FFFFFF"):
     )
 
 
+def post_texts(p):
+    """[(label, text)]: the post text in its language (`lang` + `text`); old posts with `it`/`en` still work."""
+    if p.get("text"):
+        return [(f"Testo ({(p.get('lang') or '').upper()})".replace(" ()", ""), p["text"])]
+    return [(f"Testo {k.upper()}", p[k]) for k in ("it", "en") if p.get(k)]
+
+
 def subject(p, kind):
     base = f"{PREFIX} {p['id']}"
     chan = "Profilo Gilberto" if p.get("channel") == "gilberto" else "Pagina"
@@ -75,13 +82,10 @@ def build(p, kind):
         parts_html.append(block("Nota", para(p["notes_for_ettore"]), SAND))
         parts_txt.append("NOTA\n" + p["notes_for_ettore"])
 
-    it_body = (p.get("it") or "") + (f"\n\n{hashtags}" if hashtags else "")
-    parts_html.append(block("Testo IT", para(it_body)))
-    parts_txt.append("TESTO IT\n" + it_body)
-    if p.get("en"):
-        en_body = p["en"] + (f"\n\n{hashtags}" if hashtags else "")
-        parts_html.append(block("Testo EN", para(en_body)))
-        parts_txt.append("TESTO EN\n" + en_body)
+    for label, text in post_texts(p):
+        body = text + (f"\n\n{hashtags}" if hashtags else "")
+        parts_html.append(block(label, para(body)))
+        parts_txt.append(label.upper() + "\n" + body)
     if p.get("first_comment"):
         parts_html.append(block("Primo commento", para(p["first_comment"])))
         parts_txt.append("PRIMO COMMENTO\n" + p["first_comment"])

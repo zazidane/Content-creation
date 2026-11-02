@@ -13,13 +13,13 @@ Runs on **Thursday 08:40** and plans the **following week**.
 2. **Already published**: `content/` of the last 6 weeks (pillars, topics, formats): avoid repeats, keep the monthly `pillar_mix`.
 3. **Pending intake**: in `INBOX.LinkedIn` and `INBOX`, Ettore's emails of the last 30 days tagged `[REPORT]`, `[IDEA]`, `[GILBERTO]`, and drafts answered `RIMANDA`. An intake is used if a post in `content/` cites it in `intake`.
 4. **Events**: events in `config/events.yaml` falling in the next 3 weeks (announcement 7–10 days before, recap within 2 days after).
-5. **Fresh signals**: run `source-scout` (last 14 days).
+5. **Fresh signals**: the latest `research/*_fonti.md` written by Wednesday's scouting task. If it is missing or older than 3 days, run `source-scout` yourself (last 14 days).
 6. **Learnings**: the latest `analytics/monthly/*.md` and `analytics/weekly/*.md`.
 
 ## Output
 
 For each slot of next week (page: 3 slots; Gilberto: per `calendar.yaml`):
-- **A** (recommended) and **B**, **C**: title, angle in one sentence, pillar, type, format, main source/intake, why now.
+- **A** (recommended) and **B**, **C**: title, angle in one sentence, pillar, type, format, main source/intake, why now. Page posts are in English, Gilberto's in Italian; the plan email itself is in Italian.
 - Gilberto's slot: first-person angle, ideally linked to one of the page's topics.
 - "Altri spunti" section: up to 5 signals not used.
 - Upcoming events and missing information to request (e.g. event photos).

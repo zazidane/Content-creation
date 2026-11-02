@@ -9,11 +9,11 @@ Data lives in `analytics/` (see `analytics/README.md`).
 
 ## 1. Friday request (scheduled, Friday 15:50)
 
-List the posts with `publish_date` in the last 7 days from `content/` (both channels) plus any older post with fewer than 3 snapshots in `analytics/metrics.csv`. Send `[gCASTEL LI] Statistiche W<ww>` asking for, per post, a screenshot of the post analytics (impressions, reactions, comments, reposts, clicks) and one screenshot of the page analytics overview (followers, page views) — and, for Gilberto, his post analytics. Include the list with IDs, dates and first line of each post so Ettore can find them. One short paragraph, no more.
+List the posts with `publish_date` in the last 7 days from `content/` (both channels) plus any older post with fewer than 3 snapshots in `analytics/metrics.csv`. **No posts → no email**, stop. Otherwise send `[gCASTEL LI] Statistiche W<ww>` asking for, per post, a screenshot of the post analytics (impressions, reactions, comments, reposts, clicks) and one screenshot of the page analytics overview (followers, page views) — and, for Gilberto, his post analytics. Ask to attach the screenshots as files (paperclip), and say that, if attaching does not work, he can paste the numbers in the body as `ID: impression / reazioni / commenti / repost / clic`. Include the list with IDs, dates and first line of each post so Ettore can find them. One short paragraph, no more.
 
 ## 2. Ingest (called by linkedin-inbox)
 
-1. Read the email with `read_email`. If the screenshots are not readable from the tool output, reply asking Ettore to paste the numbers in the email body (format: `ID: impression / reazioni / commenti / repost / clic`) and stop.
+1. Read the email with `read_email`, save the result to a file and run `python3 scripts/mail_attachments.py <file> <scratchpad dir>`; Read each saved image. Numbers pasted in the body (`ID: impression / reazioni / commenti / repost / clic`) are just as valid. If there are neither legible screenshots nor numbers, reply asking Ettore to paste the numbers in that format and stop.
 2. Match each screenshot to a post (first words of the text, date, ID).
 3. Append one row per post to `analytics/metrics.csv` (`snapshot_date`, days since publication, all metrics; empty if not visible). Page-level numbers go to `analytics/page.csv`.
 4. Write `analytics/weekly/<yyyy>-W<ww>.md`: table of the week, engagement rate = (reactions + comments + reposts + clicks) / impressions, best and worst post with one hypothesis each.

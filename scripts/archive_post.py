@@ -5,7 +5,7 @@ Usage:
     python3 scripts/archive_post.py <post.json> <approved_by> [visual files...]
 
 Creates content/<year>/<yyyy-mm-dd>_<id>_<slug>/ with:
-  post.md      frontmatter + IT + EN + first comment
+  post.md      frontmatter + post text (its language) + first comment
   post.json    the full post data (as approved)
   visual.*     the rendered files passed as arguments (png, pdf, spec json)
 Prints the folder path. Call it ONLY after Ettore's OK.
@@ -50,6 +50,7 @@ def main():
         "id": p["id"],
         "title": p.get("title"),
         "channel": p.get("channel"),
+        "lang": p.get("lang"),
         "type": p.get("type"),
         "pillar": p.get("pillar"),
         "format": p.get("format"),
@@ -64,9 +65,12 @@ def main():
         "review_score": p.get("review", {}).get("score"),
     }
     lines = ["---"] + [f"{k}: {yaml_value(v)}" for k, v in front.items()] + ["---", ""]
-    lines += [f"# {p.get('title', p['id'])}", "", "## IT", "", p.get("it", ""), ""]
-    if p.get("en"):
-        lines += ["## EN", "", p["en"], ""]
+    lines += [f"# {p.get('title', p['id'])}", ""]
+    if p.get("text"):
+        lines += [f"## Testo ({(p.get('lang') or '').upper()})", "", p["text"], ""]
+    for k in ("it", "en"):  # posts written before the one-language-per-channel rule
+        if p.get(k):
+            lines += [f"## {k.upper()}", "", p[k], ""]
     if p.get("first_comment"):
         lines += ["## Primo commento", "", p["first_comment"], ""]
     if p.get("hashtags"):

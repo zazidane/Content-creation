@@ -1,5 +1,7 @@
 # Structure per content type
 
+Page posts are written in English, Gilberto's in Italian (`config/calendar.yaml` → `language`).
+
 ## mercato — report commentary
 1. Hook: the most surprising figure, with its unit and year.
 2. Context in 1–2 lines (who published it, on what).

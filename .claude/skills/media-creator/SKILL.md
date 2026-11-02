@@ -14,7 +14,7 @@ Brand: `brand/design-system.md`. Renderer and templates: `media/README.md`.
    - `carousel` → `cover` + 3–6 `point` slides (+ optional closing `announce` or `quote`);
    - `text` → no visual.
    Default format `portrait` (1080×1350).
-2. Write the spec JSON in the scratchpad (`out` relative to the spec file). Text on slides must be short: titles ≤ 60 characters, body ≤ 160, figures exactly as in the post, source on every slide with figures. Use the post's language (IT) for the visual unless `bilingual_mode` says otherwise.
+2. Write the spec JSON in the scratchpad (`out` relative to the spec file). Text on slides must be short: titles ≤ 60 characters, body ≤ 160, figures exactly as in the post, source on every slide with figures. Visual text in the post's language (`lang`: page `en`, Gilberto `it`), with the matching number format.
 3. Render: `node media/render.cjs <spec.json>` → `<out>.png`, `<out>.pdf` (carousel), `<out>.preview.jpg` (≤ 70 KB).
 4. **Look at the PNG** (Read the image) and fix overflow, awkward line breaks or contrast problems before returning.
 5. Store the spec in the post JSON as `visual.spec`, the preview path as `visual.preview`, `visual.cid = "visual"`.

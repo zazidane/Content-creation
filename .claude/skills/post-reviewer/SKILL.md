@@ -11,13 +11,13 @@ Read `brand/guardrails.md`, `brand/voice.md`, `brand/company-context.md`.
 
 | Area | Blocking if… |
 |---|---|
-| **Facts** | a figure has no source; the quote in `sources` does not contain the figure; a source cannot be opened (re-open each URL with WebFetch); IT/EN figures differ |
+| **Facts** | a figure has no source; the quote in `sources` does not contain the figure; a source cannot be opened (re-open each URL with WebFetch); a figure in the post differs from the quote (after converting the number format) |
 | **Guardrails** | any ❌ rule of `guardrails.md` is violated; a ⚠️ item appears without Ettore's OK recorded in the intake or feedback |
 | **Features** | a feature is not in "Cosa fa la piattaforma oggi" and was not announced by Ettore |
-| **Language** | wrong number format for the language; banned phrases from `voice.md` |
+| **Language** | `lang` differs from the channel's `language` in `config/calendar.yaml` (page `en`, Gilberto `it`); wrong number format for the language; banned phrases from `voice.md` |
 | **Visual** | text on the visual differs from the post; source missing on a `data` card; preview missing for a non-text format |
 
-Warnings (non-blocking, shown to Ettore): hook weak or longer than two lines, length out of range, more than 1 emoji, exclamation marks, hashtags not 3–5, link in the body, English reads like a literal translation, too similar to a post of the last 6 weeks in `content/`.
+Warnings (non-blocking, shown to Ettore): hook weak or longer than two lines, length out of range, more than 1 emoji, exclamation marks, hashtags not 3–5, link in the body, the English page post reads like a translation from Italian (Italian syntax, untranslated Italian terms without explanation), too similar to a post of the last 6 weeks in `content/`.
 
 ## Output
 

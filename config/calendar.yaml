@@ -5,6 +5,7 @@ channels:
   pagina:
     label: "Pagina gCASTEL"
     approver: Ettore Zauli
+    language: en      # pagina solo in inglese (decisione del 2026-11-02)
     posts_per_week: 3
     slots:            # giorno e ora di pubblicazione consigliati
       - { day: tue, time: "08:30" }
@@ -13,15 +14,13 @@ channels:
   gilberto:
     label: "Profilo di Gilberto Castelluzzo"
     approver: Gilberto Castelluzzo   # approva tramite Ettore (vedi docs/protocollo-email.md)
-    posts_per_week: 1                # DA CONFERMARE
+    language: it                     # profilo di Gilberto in italiano
+    posts_per_week: 1
     slots:
       - { day: wed, time: "12:30" }
 
-languages: [it, en]
-# combined: un solo post con IT sopra e EN sotto
-# separate: la versione EN è un post a parte (raddoppia i post)
-# it_only_en_comment: post in IT, versione EN nel primo commento
-bilingual_mode: combined   # DA CONFERMARE
+# Una sola lingua per canale (campo `language` sopra): niente versioni tradotte.
+# Il testo si scrive direttamente nella lingua del canale, non si traduce dall'italiano.
 
 lead_times:
   plan_email: "thu 08:40"           # piano della settimana successiva

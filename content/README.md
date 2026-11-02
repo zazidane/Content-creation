@@ -4,7 +4,7 @@ Solo post approvati da Ettore (o da Gilberto per il suo profilo). Una cartella p
 
 ```
 content/<anno>/<aaaa-mm-gg>_<ID>_<slug>/
-├── post.md      # frontmatter (canale, tipo, pilastro, fonti, approvazione) + testo IT/EN + primo commento
+├── post.md      # frontmatter (canale, tipo, pilastro, fonti, approvazione) + testo (EN pagina, IT Gilberto) + primo commento
 ├── post.json    # dati completi del post approvato
 ├── visual.png   # immagine o copertina del carosello
 ├── visual.pdf   # carosello (se presente)

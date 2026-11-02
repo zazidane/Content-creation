@@ -27,6 +27,6 @@ Il reviewer (`post-reviewer`) blocca qualsiasi bozza che violi una regola ❌. L
 ## ✅ Sempre
 
 - Ogni numero ha fonte primaria, anno e link salvati in `sources` del post.
-- I numeri si scrivono in formato italiano nella versione IT (25.173; 440.000 €; 4,9%) e inglese nella versione EN (25,173; €440,000; 4.9%).
+- I numeri si scrivono in formato inglese sulla pagina (25,173; €440,000; 4.9%) e in formato italiano sul profilo di Gilberto (25.173; 440.000 €; 4,9%).
 - I pagamenti si descrivono come "tramite prestatore di servizi di pagamento autorizzato, direttamente sul conto del venditore".
 - Le funzionalità si citano solo se presenti in `brand/company-context.md` → "Cosa fa la piattaforma oggi", o comunicate da Ettore come rilasciate.

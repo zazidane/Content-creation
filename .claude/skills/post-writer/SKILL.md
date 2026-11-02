@@ -1,6 +1,6 @@
 ---
 name: post-writer
-description: Writes or revises a gCASTEL LinkedIn post (Italian + English) for the company page or Gilberto Castelluzzo's profile, as a structured JSON ready for review, visuals and email. Use whenever a LinkedIn post must be drafted or revised from a brief, an intake email or Ettore's feedback.
+description: Writes or revises a gCASTEL LinkedIn post (English for the company page, Italian for Gilberto's profile) for the company page or Gilberto Castelluzzo's profile, as a structured JSON ready for review, visuals and email. Use whenever a LinkedIn post must be drafted or revised from a brief, an intake email or Ettore's feedback.
 ---
 
 # post-writer
@@ -15,12 +15,13 @@ A brief: ID, channel (`pagina` | `gilberto`), slot (e.g. "mar 4/11 08:30") and `
 
 ## Writing rules
 
-- Italian first, then the English **adaptation** (see `voice.md`).
+- **One language per channel** (`config/calendar.yaml` → `language`): page `en`, Gilberto `it`. Write natively in that language; never draft in Italian and translate (see `voice.md` → Lingue).
 - Hook in the first two lines; one idea per paragraph; empty line between paragraphs.
 - Length: page 600–1,300 characters; Gilberto 800–1,800.
 - Every figure must be in `sources` with the exact quote. No source → no figure.
 - Only features listed in `company-context.md` → "Cosa fa la piattaforma oggi", or announced by Ettore.
-- Links go in `first_comment`.
+- Links go in `first_comment` (same language as the post).
+- Sources in Italian keep their original quote; in an English post the figure is written in English format and must match the quote.
 - 3–5 hashtags.
 - Provide 2 alternative hooks.
 
@@ -37,8 +38,8 @@ A brief: ID, channel (`pagina` | `gilberto`), slot (e.g. "mar 4/11 08:30") and `
   "pillar": "mercato",
   "format": "data | carousel | announce | quote | text",
   "title": "Short internal title",
-  "it": "Italian text without hashtags",
-  "en": "English text without hashtags",
+  "lang": "en",
+  "text": "Post text in the channel's language, without hashtags",
   "first_comment": "Fonte: … https://…",
   "hashtags": ["#realestate", "#Milano"],
   "hook_alternatives": ["…", "…"],

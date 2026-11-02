@@ -4,7 +4,8 @@
 
 | | Pagina gCASTEL | Profilo di Gilberto Castelluzzo |
 |---|---|---|
-| Persona | "Noi" | "Io", prima persona |
+| Lingua | **Inglese** | **Italiano** |
+| Persona | "Noi" ("we") | "Io", prima persona |
 | Tono | Professionale, concreto, calmo e affidabile | Diretto, con opinioni nette e argomentate |
 | Contenuti | Prodotto, dati di mercato, eventi, annunci | Punto di vista del fondatore, lezioni dal campo, incontri con sviluppatori e SGR, visione sulla digitalizzazione del real estate |
 | Lunghezza | 600–1.300 caratteri | 800–1.800 caratteri |
@@ -23,11 +24,13 @@ Gilberto può parlare di contratti, firma e fiducia, di come decidono i grandi c
 - **Hashtag**: 3–5, in fondo, specifici (#realestate #proptech #nuovecostruzioni #Milano #BIM…).
 - **Link esterni**: nel primo commento (ipotesi da verificare con le analytics, vedi `playbook.md`).
 
-## Bilingue
+## Lingue
 
-- Ogni post nasce in **italiano** e viene **adattato** (non tradotto alla lettera) in **inglese** internazionale.
-- Nell'inglese: formati numerici inglesi, riferimenti spiegati per un lettore non italiano (es. "OMI, the Italian Revenue Agency's property market observatory").
-- Modalità di pubblicazione della versione EN: vedi `config/calendar.yaml` → `bilingual_mode`.
+Una lingua per canale (`config/calendar.yaml` → `language`), nessuna traduzione.
+
+- **Pagina gCASTEL: solo inglese.** Il post si scrive **direttamente in inglese** internazionale, non si traduce da un testo italiano. Lettore tipo: investitore, SGR o sviluppatore anche estero. Formati numerici inglesi; i riferimenti italiani si spiegano (es. "OMI, the Italian Revenue Agency's property market observatory"; "Milan" e non "Milano" nel testo).
+- **Profilo di Gilberto: solo italiano.** Formati numerici italiani.
+- Le fonti italiane restano citate nella lingua originale (`sources.quote`); nel post inglese il dato è riportato in formato inglese e deve coincidere con la citazione.
 
 ## Parole e frasi da evitare
 
@@ -37,5 +40,9 @@ EN: "in today's fast-paced world", "game-changer", "revolutionize", "we're thril
 
 ## Lessico gCASTEL
 
+IT (profilo di Gilberto):
+
 - "unità", "iniziativa", "sviluppatore", "acquirente", "venditore", "nuove costruzioni", "percorso d'acquisto", "Priority Ticket", "Proposta d'Acquisto", "firma elettronica qualificata", "caparra".
+EN (pagina): "unit", "development", "developer", "buyer", "seller", "new-build homes", "buying journey", "Priority Ticket", "purchase proposal (Proposta d'Acquisto)", "qualified electronic signature (QES)", "deposit".
+
 - Evitare "token/tokenizzazione" riferiti alla piattaforma: il lessico del design system ("Investi", investimento tokenizzato) riflette una versione precedente del prodotto.
